@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|Sarala:400,700&display=swap');
+body{
+	font-family: 'Muli', sans-serif;
+	color:#234476;
+	font-size:24px;
+}
+h1,h2,h3,h4,h5{
+	font-family: 'Sarala', sans-serif;
+	font-weight: bold;
+	color:#174fa7;
+}
+h1{
+	font-size:62px;
+}
+h2{
+	font-size: 55px;
+}
+h3{
+	font-size:50px;
+}
+.v-btn{
+	padding:5px 25px;
+	border-radius:6px;
+	font-size: 22px;	
+	height:50px;
+	border:none;
+}
+.v-btn-primary{
+	background-color:#174fa7;
+	color:#ffffff;
+}
+.v-btn-primary:hover{
+	border:1px solid #91b2e5;
+	background-color: #ffffff;
+	color:#174fa7;
+}
+.v-btn-outline{
+	border:1px solid #91b2e5;
+	background-color: #ffffff;
+	color:#174fa7;
+	-webkit-box-shadow: 4px 2px 30px -20px #174fa7;
+	-moz-box-shadow: 4px 2px 30px -20px #174fa7;
+	box-shadow: 4px 2px 30px -20px #174fa7;
+}
+.v-btn-outline:hover{
+	background-color:#174fa7;
+	color:#ffffff;
+}
+.v-input-group{
+	-webkit-box-shadow: 4px 2px 30px -20px #174fa7;
+	-moz-box-shadow: 4px 2px 30px -20px #174fa7;
+	box-shadow: 4px 2px 30px -20px #174fa7;
+}
+.input-group-prepend{
+	height:50px;
+}
+.input-group-prepend > button{
+	color:#174fa7;
+	background-color: #f5f8ff;
+	border:1px solid #91b2e5;
+}
+.input-group-prepend > button:hover{
+	background-color:#174fa7;
+	color:#ffffff;
+}
+.v-input{
+	height:50px!important;
+}
+.rounded-left{
+	border-radius:6px 0 0 6px!important;
+}
+.outline-input{
+	border:1px solid #91b2e5;
+}
+
+.v-btn-purple{
+	background-color:#916eb2;
+	color:#ffffff;
+	width:150px;
+}
+.v-btn-purple i{
+	font-size:15px;
+}
+.image-card{
+	width:500px;
+	height:500px;
+	border-radius:6px;
+	-webkit-box-shadow: 4px 2px 30px -20px #174fa7;
+	-moz-box-shadow: 4px 2px 30px -20px #174fa7;
+	box-shadow: 4px 2px 30px -20px #174fa7;
+}
+.image-con{
+	position:relative;
+}
+.abs-img{
+	position: absolute;
+	bottom:0;
+	width:150px;
+	right:-25%;
+}
+.short-hr{
+	width:150px;
+	border:0.5px solid #174fa7;
+	opacity:0.5;
+	display: inline-block;
+	height:0px;
+	-webkit-box-shadow: 4px 2px 30px -20px #174fa7;
+	-moz-box-shadow: 4px 2px 30px -20px #174fa7;
+	box-shadow: 4px 2px 30px -20px #174fa7;
+}
+
+.light-blue-bg{
+	background-color: #f5f8ff;
+}
+/* Media query small */
+@media only screen and (max-width:768px){
+	h1{
+		font-size:62px;
+	}
+	h2{
+		font-size: 45px;
+	}
+	h3{
+		font-size:30px;
+	}
+}
