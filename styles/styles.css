@@ -5,6 +5,10 @@ body{
 	font-size:22px;
 	overflow-x: hidden;	
 }
+a:hover{
+	text-decoration: none;
+
+}
 header{
 	-webkit-box-shadow: 4px 2px 30px -20px #174fa7;
 	-moz-box-shadow: 4px 2px 30px -20px #174fa7;
@@ -288,7 +292,7 @@ color:#906eb1;
 }
 .light-title{
 	color:#cad6e1;
-	font-size:16px;
+	font-size:14px;
 	font-family: 'Muli', sans-serif;
 	font-weight:100;
 }
@@ -357,7 +361,47 @@ td:last-child {
 .circ-3{
 	left:calc(40px);
 }
+.sign-nav{
+	background-color: #e7f0f9;
+	font-size:14px;
+	font-weight: bold;
+}
+.deeper-light-bg{
+	background-color: #e7f0f9;
+}
+.active-sign-nav{
+	border-radius:6px;
+	background-color: #ffffff;
+}
 
+.top-items-nav a{
+	width:50%;
+	display: inline-block;
+}
+.v-outline-input{
+	border:1px solid #91b2e5;
+	border-radius: 6px;
+}
+.v-outline-input::placeholder{
+	color:#cad6e1;
+	font-size:14px;
+}
+.wd-100{
+	width:100%!important;
+	max-width: 100%!important;
+}
+label{
+	display: block;
+	color:#174fa7;
+	font-size:14px;
+	font-weight: bold;
+}
+.fa-input::placeholder{
+	 font-family: FontAwesome, 'Muli', sans-serif;
+}
+/* form{
+	width:500px;
+} */
 
 
 /* Hover.css */
