@@ -386,6 +386,22 @@ td:last-child {
 	color:#cad6e1;
 	font-size:14px;
 }
+.fa-select{
+	border:1px solid #91b2e5;
+	border-radius: 6px;
+	color:#cad6e1;
+}
+select{
+	border:1px solid #91b2e5;
+	border-radius: 6px;	
+}
+.fa-select:focus{
+	color:#174fa7;
+}
+select, input{
+	font-size:14px;
+	color:#174fa7;
+}
 .wd-100{
 	width:100%!important;
 	max-width: 100%!important;
@@ -399,10 +415,24 @@ label{
 .fa-input::placeholder{
 	 font-family: FontAwesome, 'Muli', sans-serif;
 }
-/* form{
+.fa-input{
+	font-family: FontAwesome, 'Muli', sans-serif;
+}
+form{
 	width:500px;
-} */
-
+	min-height:500px;
+}
+.bottom-text{
+	font-size:12px;
+	font-family: 'Muli', sans-serif;
+	font-weight: bold;
+}
+.purple-text{
+	color:#906eb1;
+}
+.faint-text{
+	color:#cad6e1;
+}
 
 /* Hover.css */
 .hvr-grow-shadow {
