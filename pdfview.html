@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+		/>
+		<link rel="stylesheet" href="./assets/uikit-3.2.1/css/uikit.min.css" />
+		<script src="./assets/uikit-3.2.1/js/uikit-icons.min.js"></script>
+		<script src="./assets/uikit-3.2.1/js/uikit.min.js"></script>
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<title>Papdesk | View</title>
+		<script src="https://kit.fontawesome.com/8ceaeffdc7.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="container justify-content-between align-items-center py-3" id="main-nav">
+				<div class="d-flex align-items-center">
+					<h3 class="mb-0"><a href="index.html">Papdesk</a></h3>
+					<div class="ml-7 d-none d-md-block">
+						<a href="history.html" class="bold-mini-text">My History</a>
+						<a href="purchase.html" class="bold-mini-text ml-4">Purchase</a>
+					</div>
+				</div>
+				<div class="d-md-flex align-items-center d-none">
+					<i class="fas fa-search search-icon mr-3" id="search-btn"></i>
+					<img src="./assets/Uniben.png" alt="" class="round-img-profile" />
+					<div class="dropdown">
+						<button
+							class="v-btn v-btn-transparent dropdown-toggle"
+							type="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+							>David Aji</button
+						>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#"
+								><i class="fas fa-shopping-cart"></i> My Cart</a
+							>
+							<a class="dropdown-item" href="#"
+								><i class="far fa-user"></i> User Settings</a
+							>
+							<a class="dropdown-item" href="#"
+								><i class="fas fa-unlock"></i> Change Password</a
+							>
+							<a class="dropdown-item" href="#"
+								><i class="fas fa-sign-out-alt"></i> Sign out</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="dropdown d-block d-md-none">
+					<i class="fas fa-search search-icon mr-3"></i>
+					<i
+						class="fas fa-bars mobile-menu-icon"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false"
+					></i>
+					<div class="dropdown-menu dropdown-menu-right">
+						<div class="d-flex align-items-center">
+							<img src="./assets/Uniben.png" alt="" class="round-img-profile mx-3" />
+							<p class="m-0 bold-mini-text v-text-blue">David Aji</p>
+						</div>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item bold-mini-text v-text-blue" href="history.html"
+							>My History</a
+						>
+						<a class="dropdown-item bold-mini-text v-text-blue" href="purchase.html"
+							>Purchase</a
+						>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#"
+							><i class="fas fa-shopping-cart"></i> My Cart</a
+						>
+						<a class="dropdown-item" href="#"
+							><i class="far fa-user"></i> User Settings</a
+						>
+						<a class="dropdown-item" href="#"
+							><i class="fas fa-unlock"></i> Change Password</a
+						>
+						<a class="dropdown-item" href="#"
+							><i class="fas fa-sign-out-alt"></i> Sign out</a
+						>
+					</div>
+				</div>
+			</nav>
+
+			<!-- Search pop up -->
+			<nav class="container align-items-center py-3" id="search-nav">
+				<div class="input-group input-group-lg ml-5 v-input-group d-lg-flex d-none">
+					<div class="input-group-prepend rounded-left">
+						<button
+							class="btn btn-outline-secondary dropdown-toggle"
+							type="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+							>All courses</button
+						>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+							<div role="separator" class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</div>
+					<input
+						type="text"
+						class="form-control v-input outline-input"
+						aria-label="Text input with dropdown button"
+						placeholder="Find over 100,000 past questions..."
+					/>
+				</div>
+				<button class="v-btn v-btn-primary ml-2">Search</button>
+				<button class="v-btn v-btn-outline-purple ml-2" id="close-btn">Close</button>
+			</nav>
+		</header>
+
+		<main>
+			<section class="pdf-top">
+				<div class="container">
+					<div class="row">
+							<div class="col-md-3 d-flex align-items-center py-3 px-2  mr-line ">
+									<p class="my-0 mr-3">Page <span class="black-span">2</span> of 2</p>
+									<i class="fas fa-caret-left mr-3"></i>
+									<i class="fas fa-caret-right"></i>
+								</div>
+								<div class="col-md-4 mr-line py-3 px-2 d-flex align-items-center">
+									<p class="m-0"> 200L- Structural Mechanics Theory</p>
+								</div>
+								<div class="col-md-2 mr-line py-3 px-2 d-flex align-items-center">
+									<p class="m-0"> 100% Zoom </p>
+									<div
+										class="black-round-span ml-3 d-flex align-items-center justify-content-center"
+										><i class="fas fa-plus"></i
+									></div>
+									<div
+										class="black-round-span ml-3 d-flex align-items-center justify-content-center"
+										><i class="fas fa-minus"></i
+									></div>
+								</div>
+								<div class="col-md-3 d-flex align-items-center py-3 pl-3">
+									<button class="v-btn v-btn-purple-slim"
+										><i class="far fa-file-alt"></i> View Resources</button
+									>
+								</div>
+					</div>
+				</div>
+			</section>
+			<section class="pdf-con py-5 d-flex flex-column flex-md-row">
+				<div class="d-flex align-items-center">
+						<span class="white-hr"></span>
+				</div>
+				<div class="container-fluid"> 
+					<div class="row">
+						<div class="col-sm-12 col-md-10 d-flex align-items-md-center">
+								<div class="d-flex align-items-md-center flex-column flex-md-row">
+						
+										<p class="my-0 ml-lg-5 ml-md-2 ml-0 mt-2 mt-md-0"><span>Last Updated:</span> 5 mins ago</p>
+										<p class="my-0 ml-lg-5 ml-md-2 ml-0 mt-2 mt-md-0"><span>Course Code:</span> CVE210 </p>
+										<p class="my-0 ml-lg-5 ml-md-2 ml-0 mt-2 mt-md-0"
+											><span>Course Title:</span> Structural_Analysis_ES_2009
+										</p>
+									</div>
+								
+						</div>
+						<div class="col-sm-12 col-md-2 mt-2 mt-md-0">
+								<div class="position-relative pr-max">
+										<img src="./assets/Uniben.png" alt="" class="circle-img2" />
+										<img
+											src="./assets/afe-babalola.png"
+											alt=""
+											class="circle-img2 position-absolute circ2"
+										/>
+										<img
+											src="./assets/unilag.png"
+											alt=""
+											class="circle-img2 position-absolute circ3"
+										/>
+									</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="light-blue-bg">
+				<div class="purple-hr"></div>
+				<div class="container py-7">
+					<h2>Resources</h2>
+					<p>Place orders for materials to aid your personal/group study related to your <br>current read.</p>
+					<div class="accordion" id="accordionExample">
+							<div class="card">
+								<div class="card-header d-flex justify-content-between align-items-center" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="hideDetails()">
+									<h5 class="mb-0">
+										1.   <span class="ml-5 pl-3">Engineering Lab Testing kit</span>
+									</h5>
+									<div class="d-flex align-items-center">
+										<p class="my-0 link-purple mr-6" id="detail">+ See details</p>
+									<button class="v-btn v-btn-primary">Place order</button>
+									</div>
+								</div>
+						
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+									<div class="card-body">
+										<p class="card-body-text ml-5 pl-5">				
+												You will be able to complete projects that can be incorporated into real life scenarios with this resource in order to display your capabilities to departmental heads.
+											</p>
+											<div class="d-flex justify-content-between align-items-center ml-5 pl-5">
+												<p class="my-0 light-title">Buy now to place an order for this item, it would be delivered to you.</p>
+												<p class="my-0 green-text amount-text">N2,999</p>
+											</div>
+											<hr class="hr-light">
+											<p class="my-0 link-purple ml-5 pl-5 mr-6">- Hide details</p>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header d-flex justify-content-between align-items-center" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+									<h5 class="mb-0">
+										2.   <span class="ml-5 pl-3">Structural Mechanics by Aslam Kassimali (Text)</span>
+									</h5>
+									<div class="d-flex align-items-center">
+										<p class="my-0 link-purple mr-6" id="detail">+ See details</p>
+									<button class="v-btn v-btn-primary">Place order</button>
+									</div>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body">
+										<p class="card-body-text ml-5 pl-5">				
+												You will be able to complete projects that can be incorporated into real life scenarios with this resource in order to display your capabilities to departmental heads.
+											</p>
+											<div class="d-flex justify-content-between align-items-center ml-5 pl-5">
+												<p class="my-0 light-title">Buy now to place an order for this item, it would be delivered to you.</p>
+												<p class="my-0 green-text amount-text">N2,999</p>
+											</div>
+											<hr class="hr-light">
+											<p class="my-0 link-purple ml-5 pl-5 mr-6">- Hide details</p>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header d-flex justify-content-between align-items-center" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree	">
+									<h5 class="mb-0">
+										3.   <span class="ml-5 pl-3">Oyay Reading Lamp</span>
+									</h5>
+									<div class="d-flex align-items-center">
+										<p class="my-0 link-purple mr-6" id="detail">+ See details</p>
+									<button class="v-btn v-btn-primary">Place order</button>
+									</div>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+									<div class="card-body">
+										<p class="card-body-text ml-5 pl-5">				
+												You will be able to complete projects that can be incorporated into real life scenarios with this resource in order to display your capabilities to departmental heads.
+											</p>
+											<div class="d-flex justify-content-between align-items-center ml-5 pl-5">
+												<p class="my-0 light-title">Buy now to place an order for this item, it would be delivered to you.</p>
+												<p class="my-0 green-text amount-text">N2,999</p>
+											</div>
+											<hr class="hr-light">
+											<p class="my-0 link-purple ml-5 pl-5 mr-6">- Hide details</p>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</section>
+		</main>
+		<footer> </footer>
+		<script>
+			window.onload = () => {
+				const searchBtn = document.querySelector("#search-btn");
+				const closeBtn = document.querySelector("#close-btn");
+				const searchNav = document.querySelector("#search-nav");
+				const mainNav = document.querySelector("#main-nav");
+				const openMenu = () => {
+					searchNav.classList.add("animated", "fadeIn");
+					searchNav.style.display = "flex";
+					mainNav.style.display = "none";
+					console.log("working");
+				};
+				const closeMenu = () => {
+					// searchNav.classList.add('animated' , 'fadeOutRight');
+					mainNav.classList.add("animated", "fadeIn");
+					searchNav.style.display = "none";
+					mainNav.style.display = "flex";
+				};
+				searchBtn.addEventListener("click", openMenu);
+				closeBtn.addEventListener("click", closeMenu);
+				let isShow = false;
+				// const hideDetails = (e) =>{	
+				// 	isShow = !isShow;
+				// 	isShow ? e.target.document.querySelector('#detail').style.display = 'none' : e.target.document.querySelector('#detail').style.display = 'block';
+				// }
+				function hideDetails (e){
+					isShow = !isShow;
+					isShow ? e.target.document.querySelector('#detail').style.display = 'none' : e.target.document.querySelector('#detail').style.display = 'block';
+				}
+			};
+		</script>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

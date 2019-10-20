@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli|Sarala:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,800|Sarala:400,700&display=swap');
 body{
 	font-family: 'Muli', sans-serif;
 	color:#234476;
@@ -29,9 +29,14 @@ h2{
 }
 h3{
 	font-size:40px;
+	font-family: 'Muli', sans-serif;
+	font-weight: 800;
 }
 h4{
 	font-size:30px;
+}
+h5{
+	font-size: 20px;
 }
 li a{
 	color:#ffffff;
@@ -118,6 +123,14 @@ li a{
 	color:#906eb1;
 	border:1px solid #906eb1;
 }
+.v-btn-purple-slim{
+	background-color:#906eb1;
+	color:#ffffff;
+	font-size:15px;
+	padding-top:3px;
+	padding-bottom: 3px;
+	height:100%;
+}
 .v-btn-purple i{
 	font-size:15px;
 }
@@ -196,7 +209,7 @@ color:#906eb1;
 	background-color: #35c69f;
 }
 .map-con{
-	background-image: url('../assets/Join\ fellow.svg');
+	background-image: url('../assets/Join-fellow.svg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	height:700px;
@@ -358,10 +371,9 @@ td:last-child {
 	border-radius: 50%;
 	position: absolute;
 	top:calc(100% - 15px);
-}
-.circle-img img{
 	object-fit: cover;
 }
+
 .circ-2{
 	left:calc(20px);
 }
@@ -462,6 +474,79 @@ form{
 	font-size:16px;
 	font-weight: bold;
 }
+.pdf-top{
+	background-color: #4f535f;
+	font-size: 15px;
+	font-family: 'Muli', sans-serif;
+	color:#ffffff;
+}
+.pdf-top .fa-caret-left, .fa-caret-right{
+	font-size:20px;
+}
+.black-span{
+	background-color: #33363f;
+	border-radius:2px;
+	padding:1px 8px;
+}
+.mr-line{
+	border-right:1px solid #33363f;
+}
+.black-round-span{
+	height:20px;
+	width:20px;
+	border-radius: 50%;
+	font-size:10px;
+}
+.black-round-span:hover, .black-round-span:active{
+	background-color: #33363f;
+
+}
+.pdf-con{
+	background-color: #33363f;
+	font-size: 15px;
+	color:#ffffff;
+}
+.white-hr{
+	width:150px;
+	background-color: #ffffff;
+	opacity:0.5;
+	height:1px;
+}
+.v-z-index{
+	z-index: 5;
+}
+.circle-img2{
+	height:30px;
+	width:30px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	/* position: absolute; */
+	/* top:calc(100% - 15px); */
+	object-fit: cover;
+}
+.circ2{
+	left:20px;
+}
+.circ3{
+	left:40px;
+}
+.pr-max{
+	margin-right:40px;
+}
+.purple-hr{
+	height:6px;
+	background-color: #906eb1
+}
+.green-text{
+	color:#59c4b3;
+}
+.amount-text{
+	font-size:35px;
+}
+.hr-light{
+border:1.5px solid #f5f8ff;
+}
+
 /* for js */
 #main-nav{
 	display:flex;
@@ -503,6 +588,9 @@ form{
 .ml-7{
 	margin-left:10rem;
 }
+.mr-6{
+	margin-right:7rem;
+}
 .dropdown-item{
 	color:#b8d0e7;
 }
@@ -519,6 +607,24 @@ form{
 .mobile-menu-icon{
 	font-size:30px;
 	color:#174fa7;
+}
+.card-header{
+	background-color: #ffffff;
+	border-bottom: none;
+	cursor:default;
+}
+.card{
+	border:none;
+	margin:2px 0;
+	border-radius: 6px!important;
+}
+.card-body{
+	/* font-weight: 600; */
+}
+.card-body-text{
+	max-width:500px;
+	line-height:35px;
+	font-size:18px;
 }
 
 /* UIKit */
@@ -641,6 +747,26 @@ form{
 	.slim-img{
 		width:300px;
 	}
+	.pdf-top{
+		background-color: #4f535f;
+		font-size: 11px;
+		font-family: 'Muli', sans-serif;
+		color:#ffffff;
+	}
+	.pdf-con{
+		background-color: #33363f;
+		font-size: 11px;
+		color:#ffffff;
+	}
+	.v-btn-purple-slim{
+		background-color:#906eb1;
+		color:#ffffff;
+		font-size:11px;
+		padding-top:3px;
+		padding-bottom: 3px;
+		height:100%;
+	}
+	
 	
 	/* bootstrap iteration */
 	.ml-md-0{
