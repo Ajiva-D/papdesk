@@ -18,10 +18,41 @@
 	</head>
 	<body>
 		<header >
-			<nav class="container d-flex justify-content-between align-items-center py-3">
+			<nav class="container justify-content-between align-items-center py-3" id="mobile-nav">
 				<div class="d-flex align-items-center">
-					<h3 class="mb-0">Papdesk</h3>
+					<h3 class="mb-0"><a href="index.html">Papdesk</a></h3>
 					<div class="input-group input-group-lg ml-5 v-input-group d-lg-flex d-none">
+						<div class="input-group-prepend rounded-left">
+							<button
+								class="btn dropdown-toggle"
+								type="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>All courses</button
+							>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+								<div role="separator" class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Separated link</a>
+							</div>
+						</div>
+						<input
+							type="text"
+							class="form-control v-input outline-input"
+							aria-label="Text input with dropdown button"
+							placeholder="Find over 100,000 past questions..."
+						/>
+					</div>
+					<button class="v-btn v-btn-primary ml-2 d-lg-block d-none">Search</button>
+				</div>
+				<i class="fas fa-search search-icon d-md-none" id="mobile-search-btn"></i>
+				<button class="v-btn v-btn-outline">Sign in</button>
+			</nav>
+			<nav class="container flex-column align-items-center py-3" id="mobile-search">
+					<div class="input-group input-group-lg v-input-group d-flex">
 						<div class="input-group-prepend rounded-left">
 							<button
 								class="btn btn-outline-secondary dropdown-toggle"
@@ -46,17 +77,16 @@
 							placeholder="Find over 100,000 past questions..."
 						/>
 					</div>
-					<button class="v-btn v-btn-primary ml-2 d-lg-block d-none">Search</button>
-				</div>
-				<button class="v-btn v-btn-outline">Sign in</button>
-			</nav>
+					<button class="v-btn v-btn-primary ml-2 mt-3">Search</button>
+					<button class="v-btn v-btn-outline-purple ml-2 mt-3" id="close-btn">Close</button>
+				</nav>
 		</header>
 		<main>
 			<section class="slider-section d-none d-lg-block">
 				<div class="container-fluid d-flex">
-					 <div class="pr-lg-5 pr-md-1 slider-title py-1 pl-3 mr-1"><p class="mb-0 text-center">Browse recent courses</p></div>
-						<div class="uk-position-relative uk-visible-toggle uk-light py-1" tabindex="-1" uk-slider>
-								<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+					 <div class="pr-lg-5 pr-md-1 slider-title py-2 pl-3 mr-1"><p class="mb-0 text-center">Browse recent courses</p></div>
+						<div class="uk-position-relative uk-visible-toggle uk-light py-2 ml-5" tabindex="-1" uk-slider>
+								<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m text-center">
 										<li>
 											Medcine
 										</li>
@@ -102,12 +132,12 @@
 							class="col-sm-12 col-md-6 col-lg-7 d-flex flex-column justify-content-center"
 						>
 							<h1>Get past questions with ease</h1>
-							<p class="mt-1 mb-3"
+							<p class="mt-1 mb-3 sub-text"
 								>Papdesk offers access to a wide range of past questions and answers
 								for Nigerian Universities</p
 							>
-							<button class="v-btn v-btn-purple"
-								>Sign Up <i class="fas fa-chevron-right"></i
+							<button class="v-btn v-btn-purple mt-3"
+								>Sign Up    <i class="fas fa-chevron-right ml-3"></i
 							></button>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-5">
@@ -124,24 +154,24 @@
 				</div>
 				<div class="d-flex justify-content-start align-items-center mt-5">
 					<span class="short-hr"></span>
-					<i class="fab fa-facebook ml-4"></i>
-					<i class="fab fa-instagram ml-4"></i>
-					<i class="fab fa-twitter ml-4"></i>
+					<i class="fab fa-facebook ml-4 v-text-blue"></i>
+					<i class="fab fa-instagram ml-4 v-text-blue"></i>
+					<i class="fab fa-twitter ml-4 v-text-blue"></i>
 				</div>
 			</section>
 			<section class="light-blue-bg py-7 mt-5">
 				<h2 class="text-center mt-5">Simple Steps</h2>
-				<p class="text-center"
-					>Finding past questions and answers for your exams just got easier</p
-				>
-				<div
-					class="d-flex justify-content-md-around align-items-center flex-md-row flex-column container mt-5"
-				>
+				<p class="text-center">
+					Finding past questions and answers for your exams just got easier
+				</p>
+				<div class="container">
+						<div
+					class="d-flex justify-content-md-around align-items-center flex-md-row flex-column container mt-5">
 					<div>
 						<div class="v-card mt-3 p-5">
 							<img src="./assets/search.svg" class="v-card-img" alt="" />
 							<h4 class="mt-5">Use the platform to search</h4>
-							<p class="small-text mt-5"
+							<p class="small-text mt-4"
 								>Get the complete list of university Past Questions here when you
 								search by including the course you want</p
 							>
@@ -157,7 +187,7 @@
 						<div class="v-card mt-3 p-5">
 							<img src="./assets/file.svg" class="v-card-img" alt="" />
 							<h4 class="mt-5">Login to gain access</h4>
-							<p class="small-text mt-5"
+							<p class="small-text mt-4"
 								>Gain access to view your choice of Past Questions here once your
 								registration is confirmed</p
 							>
@@ -170,28 +200,31 @@
 						</div>
 					</div>
 				</div>
-				<div class="container mt-7">
+				</div>
+				<div class="container mt-7 ">
 					<div class="row">
 						<div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center">
 							<h1>Join Fellow Nigerian Students</h1>
-							<p class="mt-1 mb-3"
+							<p class="mt-1 mb-3 sub-text"
 								>Be a part of students spread across many Nigerian universities,
 								getting unlimited past questions and answers on our platform for
 								free!</p
 							>
-							<button class="v-btn v-btn-primary">Sign Up Now </button>
+							<button class="v-btn v-btn-primary mt-3">Sign Up Now </button>
 						</div>
-						<div class="col-sm-12 col-md-6">
+						<div class="col-sm-12 col-md-6 py-5">
 							<div
-								class="map-con d-flex flex-column justify-content-center align-items-center"
+								class="map-con d-flex flex-column justify-content-center align-items-center py-5"
 							>
-								<p class="big-h">2900+</p>
-								<p class="small-h">Answers</p>
+								<div>
+										<p class="big-h text-left my-0">2900+</p>
+										<p class="small-h text-left mt-1">Answers</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="container">
+				<div class="container mt-7 mb-5 pb-5">
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-5">
 							<div class="image-con">
@@ -202,24 +235,26 @@
 								/>
 								<div class="left-abs-img d-flex flex-column justify-content-center align-items-center	">
 									<img src="./assets/prepare-illustration.svg" alt="" />
-									<p class="text-white mb-0">Higher Grades</p>
+									<p class="text-white m-0">Higher Grades</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center ml-sm-5 ml-md-0 ml-lg-5 mt-md">
 							<h1>Prepare Better</h1>
-							<p class="mt-1 mb-3">
+							<p class="mt-1 mb-3 sub-text">
 								Papdesk offers access to a wide range of past questions and answers
 								for Nigerian Universities
+								Papdesk offers access to a wide range 
+								Papdesk offers access to a wide range 
 							</p>
-							<button class="v-btn v-btn-outline"
-								>See all past questions <i class="fas fa-chevron-right"></i
+							<button class="v-btn v-btn-outline mt-3"
+								>See all past questions <i class="fas fa-chevron-right ml-3"></i
 							></button>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="deep-bg py-7">
+			<section class="deep-bg py-8">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-8">
@@ -235,7 +270,7 @@
 									<li>Art</li>
 									<li>Education</li>
 								</ul>
-								<ul class="mt-0">
+								<ul class="mt-0 ml-5	">
 									<li>Pharmacy</li>
 									<li>Environmental Studies</li>
 									<li>Law</li>
@@ -250,7 +285,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="light-blue-bg py-7">
+			<section class="light-blue-bg py-8">
 					<h2 class="text-center mb-5">Why use Papdesk</h2>
 				<div class="container">
 						<div uk-slider autoplay=true>
@@ -308,34 +343,39 @@
 			<section class="py-7 text-center">
 				<h2>Universities we cover</h2>
 				<p>We have past questions for these and many more universities</p>
+			<div class="container mt-5">
 				<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider autoplay=true>
 
-					<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid">
+					<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-6@m uk-grid">
 							<li>
-								<img src="./assets/afe-babalola.png" alt="Afe Babalola University">
+								<img src="./assets/afe-babalola.png" alt="Afe Babalola University" class="scroll-img">
 							</li>
 							<li>
-								<img src="./assets/covenant.png" alt="Covenant University">
+								<img src="./assets/covenant.png" alt="Covenant University" class="scroll-img">
 							</li>
 							<li>
-								<img src="./assets/Uniben.png" alt="Uniben">
+								<img src="./assets/Uniben.png" alt="Uniben" class="scroll-img">
 							</li>
 							<li>
-								<img src="./assets/unilag.png" alt="Unilag">
+								<img src="./assets/unilag.png" alt="Unilag" class="scroll-img">
 							</li>
 							<li>
-								<img src="./assets/University-of-Ibadan.png" alt="Univeristy of Ibadan">
+								<img src="./assets/University-of-Ibadan.png" alt="Univeristy of Ibadan" class="scroll-img">
 							</li>
 							<li>
-								<img src="./assets/University-of-Abuja-UNIABUJA-Logo.png" alt="University Of Abuja">
+								<img src="./assets/University-of-Abuja-UNIABUJA-Logo.png" alt="University Of Abuja" class="scroll-img">
 							</li>
+							<li>
+								<img src="./assets/afe-babalola.png" alt="Afe Babalola University" class="scroll-img">
+							</li>	
 					</ul>
 					<a class="uk-position-center-right uk-position-small uk-hidden-hover v-text-blue" href="#" uk-slidenav-next uk-slider-item="next"></a>
 			
 			</div>
+			</div>
 			</section>
 		</main>
-		<footer class="deep-bg py-7">
+		<footer class="deep-bg py-8">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 col-md-6">
@@ -380,8 +420,8 @@
 					</div>
 				</div>
 				<div class="d-flex flex-column flex-md-row justify-content-between mt-5">
-						<p class="text-white tiny-text">&copy; 2019 Papdesk LTD. All rights reserved.</p>
-						<p class="text-white tiny-text"><span class="fade-text">Developed by</span> Codekago Interactive</p>
+						<p class="text-white tiny-text m-0">&copy; 2019 Papdesk LTD. All rights reserved.</p>
+						<p class="text-white tiny-text m-0"><span class="fade-text">Developed by</span> Codekago Interactive</p>
 				</div>
 			</div>
 		</footer>
@@ -400,5 +440,25 @@
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 			crossorigin="anonymous"
 		></script>
+		<script>
+			window.onload = () =>{
+				const mobileBtn = document.querySelector('#mobile-search-btn');
+				const closeBtn = document.querySelector('#close-btn');
+				const mainNav = document.querySelector('#mobile-nav');
+				const searchNav = document.querySelector('#mobile-search');
+				const showMobileSearch = () =>{
+					searchNav.classList.add("animated", "fadeIn");
+					searchNav.style.display = "flex";
+					mainNav.style.display = "none";
+				}
+				const hideMobileSearch = () =>{
+					mainNav.classList.add("animated", "fadeIn");
+					searchNav.style.display = "none";
+					mainNav.style.display = "flex";
+				}
+				mobileBtn.addEventListener('click', showMobileSearch);
+				closeBtn.addEventListener('click', hideMobileSearch);
+			}
+		</script>
 	</body>
 </html>

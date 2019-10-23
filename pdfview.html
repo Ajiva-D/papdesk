@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="./styles/styles.css" />
 		<title>Papdesk | View</title>
 		<script src="https://kit.fontawesome.com/8ceaeffdc7.js" crossorigin="anonymous"></script>
+		<script src="app.js"></script>
 	</head>
 	<body>
 		<header>
@@ -97,7 +98,7 @@
 
 			<!-- Search pop up -->
 			<nav class="container align-items-center py-3" id="search-nav">
-				<div class="input-group input-group-lg ml-5 v-input-group d-lg-flex d-none">
+				<div class="input-group input-group-lg ml-5 v-input-group d-md-flex d-none">
 					<div class="input-group-prepend rounded-left">
 						<button
 							class="btn btn-outline-secondary dropdown-toggle"
@@ -193,82 +194,152 @@
 					</div>
 				</div>
 			</section>
-			<section class="light-blue-bg">
+			<section class="light-blue-bg accordion-section">
 				<div class="purple-hr"></div>
 				<div class="container py-7">
 					<h2>Resources</h2>
 					<p>Place orders for materials to aid your personal/group study related to your <br>current read.</p>
 					<div class="accordion" id="accordionExample">
 							<div class="card">
-								<div class="card-header d-flex justify-content-between align-items-center" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="hideDetails()">
+								<div class="card-header d-flex justify-content-md-between align-items-md-center flex-column flex-md-row" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="hideDetails(detail1)">
 									<h5 class="mb-0">
-										1.   <span class="ml-5 pl-3">Engineering Lab Testing kit</span>
+										1.   <span class="ml-lg-5 pl-lg-3">Engineering Lab Testing kit</span>
 									</h5>
-									<div class="d-flex align-items-center">
-										<p class="my-0 link-purple mr-6" id="detail">+ See details</p>
-									<button class="v-btn v-btn-primary">Place order</button>
+									<div class="d-flex align-items-md-center flex-column flex-md-row">
+										<p class="my-0 link-purple mr-6" id="detail1"><i class="fas fa-plus"></i
+											> See details</p>
+									<button class="v-btn v-btn-primary" data-toggle="modal" data-target="#exampleModal">Place order</button>
+									<!-- Modal -->
+									<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+											<div class="modal-content container">
+												<div class="modal-header d-block" id="exampleModalLabel">
+												<div class="d-flex">
+													<h4 class="muli-text my-0 ml-5">Papdesk</h4> 
+													<h4 class="light-text my-0 ml-4">My Cart</h4>
+												</div>
+												<hr class="hr-light">
+													</div>
+												<div class="modal-body">
+													<div class="row">
+														<div class="col-sm-12 col-lg-5">
+															<p class="mt-0 v-text-blue">1. <span class="ml-1">Engineering Lab Testing kit</span></p>
+															<p class="amount-text v-text-blue ml-4">N2,999</p>
+															<p class="light-title ml-4">N5,998 x 2 Items</p>
+														</div>
+														<div class="col-sm-12 col-lg-7">
+															<div class="row">
+																<div class="col-sm-12 col-lg-4">
+																	<div class="d-flex">
+																		<button class="increase-btn">-</button>
+																		<div class="light-blue-bg px-5 py-0 d-flex align-items-center items-con">
+																			<p class="m-0" id="items-no">2</p>
+																		</div>
+																		<button class="increase-btn">+</button>
+																	</div>
+																	<div class="d-flex align-items-center mt-4">
+																		<h4 class="my-0 mr-4"><i class="fas fa-times light-icon"></i></h4>
+																		<h6 class="m-0 light-title v-text-blue"><b>Delete from Cart</b></h6>
+																	</div>
+																</div>
+																<div class="col-sm-12 col-lg-8">
+																	<img src="./assets/equipment-placeholder.jpg" alt="" class="item-img">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="container mt-3">
+														<div class="mx-1"><hr class="hr-light"></div>
+													</div>
+													<div class="container">
+														<div class="row mt-4">
+															<div class="col-sm-12 col-lg-5 ml-auto">
+																<div class="v-outline-input d-flex align-items-center justify-content-around px-2 px-md-0">
+																	<p class=" m-0 light-title">Total Purchase:</p>
+																	<p class=" m-0 v-text-blue amount-text">N5,998</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="container">
+													<div class="row">
+														<div class="col-sm-12">
+															<div class="modal-footer">
+																<!-- <p class="m-0 purple-text">hide bubble</p> -->
+															<div class="d-flex align-items-md-center flex-column flex-md-row">
+																<button type="button" class="v-btn v-btn-outline-purple" data-dismiss="modal">Close</button>
+																<button type="button" class="px-5 v-btn v-btn-primary mt-2 mt-md-0 ml-2">Buy Now</button>
+															</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- End -->
 									</div>
 								</div>
 						
-								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 									<div class="card-body">
-										<p class="card-body-text ml-5 pl-5">				
+										<p class="card-body-text ml-lg-5 pl-lg-5">				
 												You will be able to complete projects that can be incorporated into real life scenarios with this resource in order to display your capabilities to departmental heads.
 											</p>
-											<div class="d-flex justify-content-between align-items-center ml-5 pl-5">
+											<div class="d-flex justify-content-between align-items-center ml-lg-5 pl-lg-5">
 												<p class="my-0 light-title">Buy now to place an order for this item, it would be delivered to you.</p>
 												<p class="my-0 green-text amount-text">N2,999</p>
 											</div>
-											<hr class="hr-light">
-											<p class="my-0 link-purple ml-5 pl-5 mr-6">- Hide details</p>
+											<hr class="hr-light my-5">
 									</div>
 								</div>
 							</div>
 							<div class="card">
-								<div class="card-header d-flex justify-content-between align-items-center" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+								<div class="card-header d-flex justify-content-between align-items-md-center flex-column flex-md-row" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" onclick="hideDetails(detail2)">
 									<h5 class="mb-0">
-										2.   <span class="ml-5 pl-3">Structural Mechanics by Aslam Kassimali (Text)</span>
+										2.   <span class="ml-lg-5 pl-lg-3">Structural Mechanics by Aslam Kassimali (Text)</span>
 									</h5>
-									<div class="d-flex align-items-center">
-										<p class="my-0 link-purple mr-6" id="detail">+ See details</p>
+									<div class="d-flex align-items-md-center flex-column flex-md-row">
+										<p class="my-0 link-purple mr-6" id="detail2"><i class="fas fa-plus"></i
+											> See details</p>
 									<button class="v-btn v-btn-primary">Place order</button>
 									</div>
 								</div>
 								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 									<div class="card-body">
-										<p class="card-body-text ml-5 pl-5">				
+										<p class="card-body-text ml-lg-5 pl-lg-5">				
 												You will be able to complete projects that can be incorporated into real life scenarios with this resource in order to display your capabilities to departmental heads.
 											</p>
-											<div class="d-flex justify-content-between align-items-center ml-5 pl-5">
+											<div class="d-flex justify-content-between align-items-center ml-lg-5 pl-lg-5">
 												<p class="my-0 light-title">Buy now to place an order for this item, it would be delivered to you.</p>
 												<p class="my-0 green-text amount-text">N2,999</p>
 											</div>
-											<hr class="hr-light">
-											<p class="my-0 link-purple ml-5 pl-5 mr-6">- Hide details</p>
+											<hr class="hr-light my-5">
 									</div>
 								</div>
 							</div>
 							<div class="card">
-								<div class="card-header d-flex justify-content-between align-items-center" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree	">
+								<div class="card-header d-flex justify-content-between align-items-md-center flex-column flex-md-row" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" onclick="hideDetails(detail3)">
 									<h5 class="mb-0">
-										3.   <span class="ml-5 pl-3">Oyay Reading Lamp</span>
+										3.   <span class="ml-lg-5 pl-lg-3">Oyay Reading Lamp</span>
 									</h5>
-									<div class="d-flex align-items-center">
-										<p class="my-0 link-purple mr-6" id="detail">+ See details</p>
+									<div class="d-flex align-items-md-center flex-column flex-md-row">
+										<p class="my-0 link-purple mr-6" id="detail3"><i class="fas fa-plus"></i
+											> See details</p>
 									<button class="v-btn v-btn-primary">Place order</button>
 									</div>
 								</div>
 								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 									<div class="card-body">
-										<p class="card-body-text ml-5 pl-5">				
+										<p class="card-body-text ml-lg-5 pl-lg-5">				
 												You will be able to complete projects that can be incorporated into real life scenarios with this resource in order to display your capabilities to departmental heads.
 											</p>
-											<div class="d-flex justify-content-between align-items-center ml-5 pl-5">
+											<div class="d-flex justify-content-between align-items-center ml-lg-5 pl-lg-5">
 												<p class="my-0 light-title">Buy now to place an order for this item, it would be delivered to you.</p>
 												<p class="my-0 green-text amount-text">N2,999</p>
 											</div>
-											<hr class="hr-light">
-											<p class="my-0 link-purple ml-5 pl-5 mr-6">- Hide details</p>
+											<hr class="hr-light my-5">
 									</div>
 								</div>
 							</div>
@@ -278,7 +349,7 @@
 		</main>
 		<footer> </footer>
 		<script>
-			window.onload = () => {
+			window.onload = function() {
 				const searchBtn = document.querySelector("#search-btn");
 				const closeBtn = document.querySelector("#close-btn");
 				const searchNav = document.querySelector("#search-nav");
@@ -297,15 +368,18 @@
 				};
 				searchBtn.addEventListener("click", openMenu);
 				closeBtn.addEventListener("click", closeMenu);
-				let isShow = false;
-				// const hideDetails = (e) =>{	
+				// let isShow = false;
+				// const hideDetails = () => {	
+				// 	isShow = this.getAttribute('data-isShow');
+				// 	isShow = !isShow;
+				// 	isShow ? this.document.querySelector('#detail').style.display = 'none' : this.document.querySelector('#detail').style.display = 'block';
+				// }
+				// function hideDetails (e){
 				// 	isShow = !isShow;
 				// 	isShow ? e.target.document.querySelector('#detail').style.display = 'none' : e.target.document.querySelector('#detail').style.display = 'block';
 				// }
-				function hideDetails (e){
-					isShow = !isShow;
-					isShow ? e.target.document.querySelector('#detail').style.display = 'none' : e.target.document.querySelector('#detail').style.display = 'block';
-				}
+				// const heading = document.querySelector('#headingOne');
+				// heading.addEventListener("click", hideDetails);
 			};
 		</script>
 		<script
