@@ -619,6 +619,9 @@ margin:0;
 #mobile-search{
 	display:none;
 }
+#mobile-nav{
+	display:flex;
+}
 
 
 /* Hover.css */
